@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { connectToDatabase } from "@/lib/database";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,6 +24,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const data = async () => {
+  //   await connectToDatabase();
+  // };
+
+  // data();
+
   return (
     <ClerkProvider>
       <html lang="en">
