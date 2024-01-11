@@ -8,13 +8,13 @@ export default authMiddleware({
     "/", // homepage
     "/events:id",
     "/api/webhooks(.*)",
-    "/api/webhook/clert",
-    "/api/webhook/stripe",
+    "/api/webhooks/clerk",
+    "/api/webhooks/stripe",
     "/api/uploadthing",
   ],
   ignoredRoutes: [
-    "/api/webhook/clert",
-    "/api/webhook/stripe",
+    "/api/webhooks/clerk",
+    "/api/webhooks/stripe",
     "/api/uploadthing",
   ],
 });
