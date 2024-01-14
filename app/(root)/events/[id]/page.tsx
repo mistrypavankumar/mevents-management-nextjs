@@ -1,5 +1,6 @@
 // import CheckoutButton from "@/components/shared/CheckoutButton";
 // import Collection from "@/components/shared/Collection";
+import CheckoutButton from "@/components/ui/shared/CheckoutButton";
 import Collection from "@/components/ui/shared/Collection";
 import {
   getEventById,
@@ -57,7 +58,7 @@ const EventDetails = async ({
               </div>
             </div>
 
-            {/* <CheckoutButton event={event} /> */}
+            <CheckoutButton event={event} />
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-2 md:gap-3">
